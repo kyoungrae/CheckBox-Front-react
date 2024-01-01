@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ff6e872c.css",
+    "main.js": "/static/js/main.de13446f.js",
+    "static/js/787.439d97d9.chunk.js": "/static/js/787.439d97d9.chunk.js",
+    "static/media/checkBoxLogo.png": "/static/media/checkBoxLogo.fbdbe00ea61e563639b7.png",
+    "index.html": "/index.html",
+    "main.ff6e872c.css.map": "/static/css/main.ff6e872c.css.map",
+    "main.de13446f.js.map": "/static/js/main.de13446f.js.map",
+    "787.439d97d9.chunk.js.map": "/static/js/787.439d97d9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff6e872c.css",
+    "static/js/main.de13446f.js"
+  ]
+}
