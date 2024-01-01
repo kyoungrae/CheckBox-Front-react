@@ -1,0 +1,143 @@
+.col-percent-4{width:4%;}.col-percent-5{ width: 5%;}.col-percent-10{ width: 10%;}
+.col-percent-15{ width: 15%;}.col-percent-20{ width: 20%;}
+.col-percent-25{ width: 25%;}.col-percent-30{ width: 30%;}
+.col-percent-35{ width: 35%;}.col-percent-40{ width: 40%;}
+.col-percent-45{ width: 45%;}.col-percent-50{ width: 50%;}
+.col-percent-55{ width: 55%;}.col-percent-60{ width: 60%;}
+.col-percent-65{ width: 65%;}.col-percent-70{ width: 70%;}
+.col-percent-75{ width: 75%;}.col-percent-80{ width: 80%;}
+.col-percent-85{ width: 85%;}.col-percent-90{ width: 90%;}
+.col-percent-95{ width: 95%;}.col-percent-100{ width: 100%;}
+
+.col-px-5{ width: 5px;}.col-px-10{ width: 10px;}
+.col-px-15{ width: 15px;}.col-px-20{ width: 20px;}
+.col-px-25{ width: 25px;}.col-px-30{ width: 30px;}
+.col-px-35{ width: 35px;}.col-px-40{ width: 40px;}
+.col-px-45{ width: 45px;}.col-px-50{ width: 50px;}
+.col-px-55{ width: 55px;}.col-px-60{ width: 60px;}
+.col-px-65{ width: 65px;}.col-px-70{ width: 70px;}
+.col-px-75{ width: 75px;}.col-px-80{ width: 80px;}
+.col-px-85{ width: 85px;}.col-px-90{ width: 90px;}
+.col-px-95{ width: 95px;}.col-px-100{ width: 100px;}
+
+.row-px-5 { height: 5px;} .row-px-10{ height: 10px;}
+.row-px-15{ height: 15px;}.row-px-20{ height: 20px;}
+.row-px-25{ height: 25px;}.row-px-30{ height: 30px;}
+.row-px-35{ height: 35px;}.row-px-40{ height: 40px;}
+.row-px-45{ height: 45px;}.row-px-50{ height: 50px;}
+.row-px-55{ height: 55px;}.row-px-60{ height: 60px;}
+.row-px-65{ height: 65px;}.row-px-70{ height: 70px;}
+.row-px-75{ height: 75px;}.row-px-80{ height: 80px;}
+.row-px-85{ height: 85px;}.row-px-90{ height: 90px;}
+.row-px-95{ height: 95px;}.row-px-100{height: 100px;}
+.row-px-200{height: 200px;}.row-px-300{height: 300px;}
+.row-px-400{height: 400px;}.row-px-500{height: 500px;}
+.row-px-600{height: 600px;}.row-px-700{height: 700px;}
+.row-px-800{height: 800px;}.row-px-900{height: 900px;}
+
+.row-percent-5 { height: 5%;} .row-percent-10{ height: 10%;}
+.row-percent-15{ height: 15%;}.row-percent-20{ height: 20%;}
+.row-percent-25{ height: 25%;}.row-percent-30{ height: 30%;}
+.row-percent-35{ height: 35%;}.row-percent-40{ height: 40%;}
+.row-percent-45{ height: 45%;}.row-percent-50{ height: 50%;}
+.row-percent-55{ height: 55%;}.row-percent-60{ height: 60%;}
+.row-percent-65{ height: 65%;}.row-percent-70{ height: 70%;}
+.row-percent-75{ height: 75%;}.row-percent-80{ height: 80%;}
+.row-percent-85{ height: 85%;}.row-percent-90{ height: 90%;}
+.row-percent-95{ height: 95%;}.row-percent-100{height: 100%;}
+.regMgSt_Body{
+    width: 100%;
+    height: 100dvh;
+    overflow-y: scroll;
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.regMgSt_content_Body{
+    width: 90%;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 3rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.regMgSt_content_Body_box{
+    width: 50%;
+}
+.regMgSt_nav{
+    width: 90%;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.regMgSt_content{
+    display: flex;
+    margin: 1rem;
+}
+.regMgSt_content_title , .regMgSt_content_value_box{
+    width: 50%;
+}
+.regMgSt_content_value_box > input ,.regMgSt_content_value_box > select{
+    border-radius: .4rem;
+    padding:.6rem;
+    box-sizing: border-box;
+    border: 1px solid #B3B5B7;
+}
+.regMgSt_content_value{
+    width: 100%;
+}
+.btn{
+    padding:.3rem;
+    background-color: black;
+    color:#fff;
+    border-radius: .3rem;
+    border: none;
+}
+.crossLine{
+    border:3px solid #F8F8F8;
+}
+.regMgSt_content_valueInButton{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #B3B5B7;
+    padding:.3rem;
+    color:#fff;
+    border-radius: .3rem;
+}
+.regMgSt_content_valueInButton > .regMgSt_content_value{
+    border:none;
+}
+.regMgSt_content_valueInButton .regMgSt_content_value:focus-visible {
+    outline-color: #10FFB7;
+}
+.regMgSt_content_value_box > .regMgSt_content_value:focus-visible{
+    outline-color: #10FFB7;
+}
+.regMgtSt_footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
+.regMgtSt_footer > div >.btn{
+    cursor: pointer;
+    padding: .7rem 1.4rem;
+    margin: auto .3rem;
+    border-radius: .5rem;
+}
+.regMgtSt_footer > div >.btn:hover{
+    background-color: #B3B5B7;
+}
+.regMgtSt_footer > div>.btn:first-child:hover{
+    background-color: #B3B5B7;
+    color:#fff;
+}
+.regMgtSt_footer > div>.btn:first-child{
+    background-color: #fff;
+    color: #000;
+    border:1px solid #B3B5B7;
+}

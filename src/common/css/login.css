@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(241,244,247);
+}
+.loginForm{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.loginBody{
+    margin:300px;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    width: 280px;
+}
+.logoBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.8rem;
+}
+.logo{
+    width: 55%;
+    height: 40px;
+    background-image: url("../img/checkBoxLogo.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.login_input {
+    border: none;
+    padding: .6rem;
+    border-radius: .3rem;
+    box-sizing: border-box;
+}
+.login_input:focus-visible{
+    outline-color: #10FFB7;
+}
+.login_inputBody{
+    display: flex;
+    margin: .7rem;
+    flex-direction: column;
+}
+.login_inputBody > span{
+    font-size: 0.8rem;
+    padding-bottom: 0.3rem;
+}
+.login_authenticate_number{
+    width: 70%;
+}
+.login_authButton{
+    width: 28%;
+    padding:.3rem;
+    background-color: black;
+    color:#fff;
+    border-radius: .3rem;
+    border: none;
+}
+.login_authBody{
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: .3rem;
+}
+.login_button{
+    border: none;
+    padding: 1rem 6.8rem;
+    border-radius: .5rem;
+    background-color: #10FFB7;
+    box-sizing: border-box;
+    margin: .7rem;
+    color: #fff;
+    text-shadow: 1px 1px 1px #0d4c364a;
+}
+.login_button>span{
+    display: block;
+    width: 40px;
+}
+.login_button:hover{
+    background-color: #13c791;
+}
+.login_footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.login_footer > div > a{
+    color: #777;
+    /* text-decoration: none; */
+    text-decoration: underline;
+}
+.login_findPassword{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin:.7rem;
+}
+.cursor_pointer{
+    cursor:pointer;
+}
+.login_registerMgStore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:.7rem;
+}

@@ -1,0 +1,25 @@
+a{
+    color:#D2D4D6;
+    text-decoration: none;
+}
+a:hover{
+    color:#000; 
+}
+.nav_bar{
+    display: flex;
+}
+.flex-justify-center{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.storeInfo{
+    border: 1px solid #E3E6E9;
+    padding: .4rem;
+    box-sizing: border-box;
+    border-radius: 1.3rem;
+    margin: auto .6rem;
+}
+.storeInfo>span{
+    display: inline-block;
+}
