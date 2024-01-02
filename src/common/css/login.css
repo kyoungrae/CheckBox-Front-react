@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+	src: url('../font/googlefont/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
+}
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
 body{
+    
     background-color: rgb(241,244,247);
 }
 .loginForm{
