@@ -23,3 +23,13 @@ a:hover{
 .storeInfo>span{
     display: inline-block;
 }
+.menuItems{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+.menuItems>a{
+    margin:auto 1.5rem;
+    padding:.9rem;
+    box-sizing:border-box;
+}
