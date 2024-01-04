@@ -4,12 +4,12 @@ import { FaCircleUser } from "react-icons/fa6";
 import { HiBuildingOffice2 } from "react-icons/hi2";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 // import SubMenu from "./SubMenu";
-import {MenuItemsSet} from "./MenuItemsSet";
+import {MenuItemsSetter} from "./MenuItemsSetter";
 import MenuItems from "./MenuItems";
 import "../common/css/top.css";
 
 const Navbody = styled.div`
-                with:100%;
+                width:100%;
                 display:flex;
                 flex-direction:column;
             `;
@@ -25,12 +25,11 @@ const FlexBar = styled.div`
 function Header(){
     const storeNm = "crosfit sweatbox";
     return(
-        <>
             <Navbody>
                  <FlexBar>
                     <div className="logo col-percent-10"/>
                     <div className="menuItems col-percent-70">
-                        {MenuItemsSet.map((menu , index) =>{
+                        {MenuItemsSetter.map((menu , index) =>{
                                 const depthLevel = 0;
                                 return <MenuItems className="col-percent-70" items={menu} key={index} depthLevel={depthLevel}/>
                             })
@@ -46,14 +45,13 @@ function Header(){
                     </div>
                 </FlexBar>
                 <FlexBar>
-                {MenuItemsSet.map((menu , index) =>{
+                {MenuItemsSetter.map((menu , index) =>{
                                 const depthLevel = 1;
                                 return <MenuItems className="col-percent-70" items={menu} key={index} depthLevel={depthLevel}/>
                             })
                 }
                 </FlexBar>
             </Navbody>
-        </>
     )
 }
 export default Header;

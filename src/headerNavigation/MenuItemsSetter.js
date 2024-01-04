@@ -1,4 +1,4 @@
-export const MenuItemsSet =[
+export const MenuItemsSetter =[
     {
         title:"지점관리",
         submenu:[{title:"지점현황",path:"/PlaceStatus"},{title:"지점신청",path:"/StoreReigister"},]
