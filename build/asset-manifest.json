@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.866f85de.css",
-    "main.js": "/static/js/main.2211f615.js",
+    "main.js": "/static/js/main.056b189b.js",
     "static/js/787.439d97d9.chunk.js": "/static/js/787.439d97d9.chunk.js",
     "static/media/NotoSansKR-VariableFont_wght.ttf": "/static/media/NotoSansKR-VariableFont_wght.33752a94ca5252213de8.ttf",
     "static/media/checkBoxLogo.png": "/static/media/checkBoxLogo.fbdbe00ea61e563639b7.png",
     "index.html": "/index.html",
     "main.866f85de.css.map": "/static/css/main.866f85de.css.map",
-    "main.2211f615.js.map": "/static/js/main.2211f615.js.map",
+    "main.056b189b.js.map": "/static/js/main.056b189b.js.map",
     "787.439d97d9.chunk.js.map": "/static/js/787.439d97d9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.866f85de.css",
-    "static/js/main.2211f615.js"
+    "static/js/main.056b189b.js"
   ]
 }
