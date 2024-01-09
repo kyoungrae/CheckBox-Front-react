@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Data from "./Data";
+import {DataListSetter} from "./DataListSetter"
 
 const MainLayer = styled.div`
     background-color:#fff;
@@ -10,8 +12,8 @@ const MainLayer = styled.div`
 `;
 const SearchLayer = styled.div`
     display: flex;
-    width:100%;
-    flex-direction:cloumn;
+    width:80%;
+    align-items:center;
 `;
 const CountLayer = styled.div`
     display: flex;
@@ -25,29 +27,58 @@ const DataHeaderLayer = styled.div`
     display: flex;
     width: 100%;
     padding: 1.3rem;
-    margin:1rem 0;
+    margin:1rem 0 0 0;
     box-sizing:border-box;
     border-radius:1.3rem 1.3rem 0 0;
     background-color: #F7F8F9;
     justify-content: space-between;
 `;
 const SearchHeaderTitleLayer = styled.div`
-    padding:1.3rem;
+    padding:0.2rem;
     box-sizing:border-box;
+    input , select{
+        width:100%;
+        height:100%;
+        border:1px solid #B3B5B7;
+        border-radius:0.4rem;
+        padding:10px;
+        box-sizing:border-box;
+    }
 `;
 const DataHeaderTitle = styled.div`
     font-weight: 400;
 `;
+const ButtonStyle = styled.button`
+    padding: 10px;
+    width:100%;
+    box-sizing:border-box;
+    border-radius: 12px;
+    background:#4F4F4F;
+    color:#fff;
+    border : none;
+
+`;
+const ButtonStyleDark = styled.button`
+    padding: 10px;
+    width:100%;
+    box-sizing:border-box;
+    border-radius: 12px;
+    background:#242628;
+    color:#fff;
+    border : none;
+
+`;
+
 function DataList(){
     return(
         <MainLayer>
             <SearchLayer>
-                <SearchHeaderTitleLayer><p>구분</p></SearchHeaderTitleLayer>
-                <SearchHeaderTitleLayer><select><option value="#">전체</option></select></SearchHeaderTitleLayer>
-                <SearchHeaderTitleLayer><p>지점명</p></SearchHeaderTitleLayer>
-                <SearchHeaderTitleLayer><input placeholder="지점명 입력"></input></SearchHeaderTitleLayer>
-                <SearchHeaderTitleLayer><button>초기화</button></SearchHeaderTitleLayer>
-                <SearchHeaderTitleLayer><button>조회</button></SearchHeaderTitleLayer>
+                <SearchHeaderTitleLayer className="col-percent-10"><p>구분</p></SearchHeaderTitleLayer>
+                <SearchHeaderTitleLayer className="col-percent-20"><select><option value="#">전체</option></select></SearchHeaderTitleLayer>
+                <SearchHeaderTitleLayer className="col-percent-10"><p>지점명</p></SearchHeaderTitleLayer>
+                <SearchHeaderTitleLayer className="col-percent-30"><input placeholder="지점명 입력"></input></SearchHeaderTitleLayer>
+                <SearchHeaderTitleLayer className="col-percent-15"><ButtonStyle>초기화</ButtonStyle></SearchHeaderTitleLayer>
+                <SearchHeaderTitleLayer className="col-percent-15"><ButtonStyleDark>조회</ButtonStyleDark></SearchHeaderTitleLayer>
             </SearchLayer>
             <CountLayer>
                 <p>총 99,99개</p>
@@ -59,6 +90,9 @@ function DataList(){
                 <DataHeaderTitle>위치</DataHeaderTitle>
                 <DataHeaderTitle>상세</DataHeaderTitle>
             </DataHeaderLayer>
+            {DataListSetter.map((v,i) => {
+                 return <Data key={i} cont={v}></Data>;
+            })}
         </MainLayer>
     )
 }

@@ -23,9 +23,9 @@ const MainLayer = styled.div`
         font-size:1.4rem;
         box-sizing: border-box;
     }
-    p{
-        font-weight:bold;
-    }
+    // p{
+    //     font-weight:bold;
+    // }
 `;
 const ListOfTotalLayear = styled.div`
     display:flex;
