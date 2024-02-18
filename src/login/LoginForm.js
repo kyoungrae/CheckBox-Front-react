@@ -26,7 +26,7 @@ function LoginForm(){
                         </div>
                     </div>
                     <div className='login_footer'>
-                        <Link to="/PlaceMng">
+                        <Link to="/PlaceStatus">
                             <button type="button" className='cursor_pointer login_button'>
                                 <span>로그인</span>
                             </button>

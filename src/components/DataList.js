@@ -110,7 +110,7 @@ function DataList(){
                     <DataHeaderTitle>지점명</DataHeaderTitle>
                     <DataHeaderTitle>등록일</DataHeaderTitle>
                     <DataHeaderTitle>위치</DataHeaderTitle>
-                    <DataHeaderTitle>상세</DataHeaderTitle>
+                    <DataHeaderTitle></DataHeaderTitle>
                 </DataHeaderLayer>
                 {DataListSetter.map((v,i) => {
                     return <Data key={i} cont={v}></Data>;

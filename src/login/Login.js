@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import LoginForm from "./LoginForm";
 import RegisterMgStore from "../registerMgStore/RegisterMgStore";
 import PlaceStatus from "../placeMng/PlaceStatus";
+import DataDetail from "../components/DataDetail";
 import Header from "../headerNavigation/Header";
 function Login() {
   const location = useLocation();
@@ -27,6 +28,7 @@ function Login() {
           <Route path="/" Component={LoginForm} exact={true} ></Route>
           <Route path="/registerMgStore/*" Component={RegisterMgStore} exact={true}></Route>
           <Route path="/PlaceStatus/*" Component={PlaceStatus} exact={true}></Route>
+          <Route path="/DataDetail/*" Component={DataDetail} exact={true}></Route>
         </Routes>
     </>
   );

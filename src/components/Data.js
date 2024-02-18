@@ -1,5 +1,6 @@
 import React from "react";
 import {styled} from 'styled-components';
+import { Link } from "react-router-dom";
 const DataBodyLayer = styled.div`
     display: flex;
     width: 100%;
@@ -10,6 +11,10 @@ const DataBodyLayer = styled.div`
 `;
 const DataBody = styled.div`
     font-weight: 400;
+
+    a{
+        color:black !important;
+    }
 `;
 function Data({cont}){
     return(
@@ -18,7 +23,7 @@ function Data({cont}){
         <DataBody>{cont.placeName}</DataBody>
         <DataBody>{cont.registerDate}</DataBody>
         <DataBody>{cont.addrPlace}</DataBody>
-        <DataBody>{cont.text}</DataBody>
+        <DataBody><Link to="/DataDetail">{cont.text}</Link></DataBody>
     </DataBodyLayer>
     )
 }
