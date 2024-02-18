@@ -68,32 +68,67 @@ const ButtonStyleDark = styled.button`
     border : none;
 
 `;
+const Paging = styled.div`
+    width:100%;
+    display:flex;
+    justify-content:center;
+`;
+const PaginNumber = styled.div`
+    margin-top:10px;
+    width:32px;
+    height:32px;
+    color:#000;
+    cursor:pointer;
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+        color:#fff;
+        background:#242628;
+    }
+`;
 
 function DataList(){
     return(
-        <MainLayer>
-            <SearchLayer>
-                <SearchHeaderTitleLayer className="col-percent-10"><p>구분</p></SearchHeaderTitleLayer>
-                <SearchHeaderTitleLayer className="col-percent-20"><select><option value="#">전체</option></select></SearchHeaderTitleLayer>
-                <SearchHeaderTitleLayer className="col-percent-10"><p>지점명</p></SearchHeaderTitleLayer>
-                <SearchHeaderTitleLayer className="col-percent-30"><input placeholder="지점명 입력"></input></SearchHeaderTitleLayer>
-                <SearchHeaderTitleLayer className="col-percent-15"><ButtonStyle>초기화</ButtonStyle></SearchHeaderTitleLayer>
-                <SearchHeaderTitleLayer className="col-percent-15"><ButtonStyleDark>조회</ButtonStyleDark></SearchHeaderTitleLayer>
-            </SearchLayer>
-            <CountLayer>
-                <p>총 99,99개</p>
-            </CountLayer>
-            <DataHeaderLayer>
-                <DataHeaderTitle>구분</DataHeaderTitle>
-                <DataHeaderTitle>지점명</DataHeaderTitle>
-                <DataHeaderTitle>등록일</DataHeaderTitle>
-                <DataHeaderTitle>위치</DataHeaderTitle>
-                <DataHeaderTitle>상세</DataHeaderTitle>
-            </DataHeaderLayer>
-            {DataListSetter.map((v,i) => {
-                 return <Data key={i} cont={v}></Data>;
-            })}
-        </MainLayer>
+        <>
+            <MainLayer>
+                <SearchLayer>
+                    <SearchHeaderTitleLayer className="col-percent-10"><p>구분</p></SearchHeaderTitleLayer>
+                    <SearchHeaderTitleLayer className="col-percent-20"><select><option value="#">전체</option></select></SearchHeaderTitleLayer>
+                    <SearchHeaderTitleLayer className="col-percent-10"><p>지점명</p></SearchHeaderTitleLayer>
+                    <SearchHeaderTitleLayer className="col-percent-30"><input placeholder="지점명 입력"></input></SearchHeaderTitleLayer>
+                    <SearchHeaderTitleLayer className="col-percent-15"><ButtonStyle>초기화</ButtonStyle></SearchHeaderTitleLayer>
+                    <SearchHeaderTitleLayer className="col-percent-15"><ButtonStyleDark>조회</ButtonStyleDark></SearchHeaderTitleLayer>
+                </SearchLayer>
+                <CountLayer>
+                    <p>총 99,99개</p>
+                </CountLayer>
+                <DataHeaderLayer>
+                    <DataHeaderTitle>구분</DataHeaderTitle>
+                    <DataHeaderTitle>지점명</DataHeaderTitle>
+                    <DataHeaderTitle>등록일</DataHeaderTitle>
+                    <DataHeaderTitle>위치</DataHeaderTitle>
+                    <DataHeaderTitle>상세</DataHeaderTitle>
+                </DataHeaderLayer>
+                {DataListSetter.map((v,i) => {
+                    return <Data key={i} cont={v}></Data>;
+                })}
+            </MainLayer>
+            <Paging>
+                <PaginNumber>1</PaginNumber>
+                <PaginNumber>2</PaginNumber>
+                <PaginNumber>3</PaginNumber>
+                <PaginNumber>4</PaginNumber>
+                <PaginNumber>5</PaginNumber>
+                <PaginNumber>6</PaginNumber>
+                <PaginNumber>7</PaginNumber>
+                <PaginNumber>8</PaginNumber>
+                <PaginNumber>9</PaginNumber>
+                <PaginNumber>10</PaginNumber>
+            </Paging>
+        </>
     )
 }
 export default DataList;

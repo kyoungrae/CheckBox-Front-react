@@ -7,6 +7,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import {MenuItemsSetter} from "./MenuItemsSetter";
 import MenuItems from "./MenuItems";
 import "../common/css/top.css";
+import { Link } from "react-router-dom";
 
 const Navbody = styled.div`
                 width:100%;
@@ -27,7 +28,7 @@ function Header(){
     return(
             <Navbody>
                  <FlexBar>
-                    <div className="logo col-percent-10"/>
+                    <Link to="/PlaceStatus" className="logo col-percent-10"></Link>
                     <div className="menuItems col-percent-70">
                         {MenuItemsSetter.map((menu , index) =>{
                                 const depthLevel = 0;
